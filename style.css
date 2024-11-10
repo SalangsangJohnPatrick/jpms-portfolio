@@ -380,6 +380,10 @@ article .icon {
     border-color: rgb(163, 163, 163);
 }
 
+.btn-container .project-btn {
+    width: 200px;
+}
+
 /* CONTACT */
 
 #contact {
