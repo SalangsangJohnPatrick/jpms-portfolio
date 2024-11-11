@@ -9,6 +9,8 @@
 
 body {
     font-family: "Poppins", sans-serif;
+    background-color: #121212;
+    color: #ffffff;
 }
 
 html {
@@ -16,7 +18,7 @@ html {
 }
 
 p {
-    color: rgb(85, 85, 85)
+    color: #b3b3b3;
 }
 
 /* TRANSITION */
@@ -46,9 +48,9 @@ nav {
 }
 
 a {
-    color: black;
+    color: #ffffff;
     text-decoration: none;
-    text-decoration-color: white;
+    text-decoration-color: #121212;
 }
 
 a:hover {
@@ -89,7 +91,7 @@ a:hover {
 .hamburger-icon span {
     width: 100%;
     height: 2px;
-    background-color: black;
+    background-color: #ffffff;
     transition: all 0.3 ease-in-out;
 }
 
@@ -97,7 +99,7 @@ a:hover {
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: white;
+    background-color: #1e1e1e;
     width: fit-content;
     max-height: 0;
     overflow: hidden;
@@ -109,7 +111,7 @@ a:hover {
     padding: 10px;
     text-align: center;
     font-size: 1.5rem;
-    color: black;
+    color: #ffffff;
     text-decoration: none;
     transition: all 0.3 ease-in-out;
 }
@@ -251,6 +253,7 @@ section {
 
 .btn-color-2 {
     background: none;
+    color: #ffffff;
 }
 
 .btn-color-2:hover {
@@ -296,9 +299,9 @@ section {
 .details-container {
     padding: 1.5rem;
     flex: 1;
-    background: white;
+    background: #1e1e1e;
     border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
+    border: #333333 0.1rem solid;
     border-color: rgb(163, 163, 163);
     text-align: center;
 }
@@ -321,7 +324,7 @@ section {
 }
 
 .experience-sub-title {
-    color: rgb(85, 85, 85);
+    color: #b3b3b3;
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 2rem;
@@ -360,8 +363,8 @@ article .icon {
 }
 
 .color-container {
-    border-color: rgb(163, 163, 163);
-    background: rgb(250, 250, 250);
+    border-color: #333333;
+    background: #1e1e1e;
 }
 
 .project-img {
@@ -372,11 +375,21 @@ article .icon {
 
 .project-title {
     margin: 1rem;
-    color: black;
+    color: #ffffff;
+}
+
+.project-description {
+    color: #b3b3b3;
+    padding: 0 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    text-align: center;
 }
 
 .project-btn {
-    color: black;
+    color: #ffffff;
+    background: rgb(53, 53, 53);
     border-color: rgb(163, 163, 163);
 }
 
@@ -399,7 +412,7 @@ article .icon {
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
-    background: rgb(250, 250, 250);
+    background: #1e1e1e;
     margin: 2rem auto;
     padding: 0.5rem;
 }
@@ -433,4 +446,9 @@ footer {
 
 footer p {
     text-align: center;
+}
+
+/* ICONS */
+.icon {
+    filter: brightness(0) invert(1);
 }
