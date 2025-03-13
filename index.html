@@ -7,6 +7,7 @@
     <title>JPMS Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
+    <script src="https://kit.fontawesome.com/6ae284bbc3.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -51,10 +52,8 @@
                 <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Me</button>
             </div>
             <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="My LinkedIn" class="icon"
-                    onclick="location.href='https://www.linkedin.com/in/john-patrick-salangsang'">
-                <img src="./assets/github.png" alt="My Github" class="icon"
-                    onclick="location.href='https://github.com/SalangsangJohnPatrick'">
+                <i class="icon fa-brands fa-linkedin fa-2x" alt="My LinkedIn" onclick="location.href='https://www.linkedin.com/in/john-patrick-salangsang'"></i>
+                <i class="icon fa-brands fa-square-github fa-2x" alt="My GitHub" onclick="location.href='https://github.com/SalangsangJohnPatrick'"></i>
             </div>
         </div>
     </section>
@@ -68,19 +67,24 @@
             <div class="about-details-container">
                 <div class="about-containers">
                     <div class="details-container">
-                        <img src="./assets/achievement.png" alt="Achievement Icon" class="icon">
+                        <i class="about-icon fa-solid fa-award fa-lg"></i>
                         <h3>Achievement</h3>
-                        <p>President's Lister and <br>Dean's Lister</p>
+                        <p>Academic Honor Student <br>Cummulative GPA: 1.21</p>
                     </div>
                     <div class="details-container">
-                        <img src="./assets/education.png" alt="Education Icon" class="icon">
+                        <i class="about-icon fa-solid fa-graduation-cap fa-lg"></i>
                         <h3>Education</h3>
                         <p>Bachelor of Science in <br>Computer Science</p>
+                    </div>
+                    <div class="details-container">
+                        <i class="about-icon fa-solid fa-briefcase fa-lg"></i>
+                        <h3>Internship</h3>
+                        <p>Full Stack Developer<br>Clark Outsourcing</p>
                     </div>
                 </div>
                 <div class="text-container">
                     <p>
-                        I am a fourth-year Computer Science student with a strong passion for software development. 
+                        I am a Computer Science major with a strong passion for software development. 
                         I have developed a diverse technical skill set, allowing me to work on a range of projects, 
                         including backend systems, web applications, and mobile app development. As I transition 
                         into the professional world, I am eager to apply my knowledge, continue learning, and 
@@ -89,7 +93,7 @@
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#skills'">
+        <i class="icon arrow fa-regular fa-circle-down fa-2x" onclick="location.href='./#skills'"></i>
     </section>
     <section id="skills">
         <p class="section__text__p1">Explore My</p>
@@ -100,30 +104,44 @@
                     <h2 class="experience-sub-title">Frontend Development</h2>
                     <div class="article-container">
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <i class="icon fa-brands fa-html5 fa-2x"></i>
                             <div>
                                 <h3>HTML</h3>
                                 <p>Experienced</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <i class="icon fa-brands fa-square-js fa-2x"></i>
                             <div>
                                 <h3>JavaScript</h3>
                                 <p>Fundamentals</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <i class="icon fa-brands fa-css3-alt fa-2x"></i>
                             <div>
                                 <h3>CSS</h3>
                                 <p>Experienced</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <i class="icon fa-brands fa-flutter fa-2x"></i>
                             <div>
                                 <h3>Flutter</h3>
+                                <p>Fundamentals</p>
+                            </div>
+                        </article>
+                        <article>
+                            <i class="icon fa-brands fa-angular fa-2x"></i>
+                            <div>
+                                <h3>Angular</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <i class="icon fa-brands fa-bootstrap fa-2x"></i>
+                            <div>
+                                <h3>Bootstrap</h3>
                                 <p>Fundamentals</p>
                             </div>
                         </article>
@@ -133,42 +151,42 @@
                     <h2 class="experience-sub-title">Backend Development</h2>
                     <div class="article-container">
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <i class="icon fa-brands fa-git fa-2x"></i>
                             <div>
                                 <h3>Git</h3>
                                 <p>Fundamentals</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <i class="icon fa-solid fa-database fa-2x"></i>
                             <div>
-                                <h3>SQL</h3>
+                                <h3>MySQL</h3>
                                 <p>Experienced</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Flask</h3>
-                                <p>Fundamentals</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <i class="icon fa-brands fa-python fa-2x"></i>
                             <div>
                                 <h3>Python</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Sol</h3>
                                 <p>Fundamentals</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <i class="icon fa-solid fa-server fa-2x"></i>
+                            <div>
+                                <h3>Postman</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <i class="icon fa-brands fa-php fa-2x"></i>
+                            <div>
+                                <h3>Lumen</h3>
+                                <p>Fundamentals</p>
+                            </div>
+                        </article>
+                        <article>
+                            <i class="icon fa-brands fa-java fa-2x"></i>
                             <div>
                                 <h3>Java</h3>
                                 <p>Experienced</p>
@@ -178,11 +196,11 @@
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#projects'" />
+        <i class="icon arrow fa-regular fa-circle-down fa-2x" onclick="location.href='./#projects'"></i>
     </section>
     <section id="projects">
         <p class="section__text__p1">Browse My Top</p>
-        <h1 class="title">School Projects</h1>
+        <h1 class="title">University Projects</h1>
         <div class="experience-details-container">
             <div class="about-containers">
                 <div class="details-container color-container">
@@ -234,36 +252,20 @@
                             onclick="location.href='https://github.com/SalangsangJohnPatrick/Flask-SystemAnalyser'">See Repository</button>
                     </div>
                 </div>
-                <!-- <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-4.png" alt="Project 4" class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">HAUthentiCred</h2>
-                    <p class="project-description">
-                        A blockchain-based credential verification system for academic 
-                        institutions, built on Ethereum. HAUthentiCred enables secure, 
-                        transparent, and immutable storage of academic credentials while 
-                        facilitating easy verification by authorized parties.
-                    </p>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com/SalangsangJohnPatrick/JavaScript-HAUthentiCred'">See Repository</button>
-                    </div>
-                </div> -->
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#contact'" />
+        <i class="icon arrow fa-regular fa-circle-down fa-2x" onclick="location.href='./#contact'"></i>
     </section>
     <section id="contact">
         <p class="section__text__p1">Get in Touch</p>
         <h1 class="title">Contact Me</h1>
         <div class="contact-info-upper-container">
             <div class="contact-info-container">
-                <img src="./assets/email.png" alt="Email Icon" class="icon contact-icon email-icon" />
+                <i class="contact-icon fa-solid fa-envelope fa-lg"></i>
                 <p><a href="mailto:salangsangjpmoreno@gmail.com">salangsangjpmoreno@gmail.com</a></p>
             </div>
             <div class="contact-info-container">
-                <img src="./assets/linkedin.png" alt="LinkedIn Icon" class="icon contact-icon" />
+                <i class="contact-icon fa-brands fa-linkedin fa-lg"></i>
                 <p><a href="https://www.linkedin.com/in/john-patrick-salangsang">LinkedIn</a></p>
             </div>
         </div>

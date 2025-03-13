@@ -215,6 +215,10 @@ section {
     height: 2rem;
 }
 
+.about-icon {
+    margin-bottom: 1.3rem;
+}
+
 /* BUTTONS */
 
 .btn-container {
