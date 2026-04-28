@@ -5,288 +5,493 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JPMS</title>
+    <meta name="description"
+        content="IT Auditor and Full Stack Developer building at the intersection of security, code, and systems thinking.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="favicon.ico?v=1" type="image/x-icon" />
-    <link rel="icon" href="favicon.png" type="image/png" />
-    <script src="https://kit.fontawesome.com/6ae284bbc3.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">JPMS</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-ring" id="cursor-ring"></div>
+
+    <!-- THEME TOGGLE -->
+    <button id="theme-toggle" aria-label="Toggle light/dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+        </svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round">
+            <circle cx="12" cy="12" r="5" fill="currentColor" stroke="none" />
+            <line x1="12" y1="1" x2="12" y2="3" />
+            <line x1="12" y1="21" x2="12" y2="23" />
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+            <line x1="1" y1="12" x2="3" y2="12" />
+            <line x1="21" y1="12" x2="23" y2="12" />
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+        </svg>
+    </button>
+
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <div class="preloader-counter" id="preloader-counter">0</div>
+        <div class="preloader-line" id="preloader-line"></div>
+        <p class="preloader-label">salangsang.site / initializing signal</p>
+    </div>
+
+    <!-- HERO -->
+    <section id="hero">
+        <div class="hero-bg-text">JPMS</div>
+        <div class="hero-top-left">
+            <span class="section-label">SALANGSANG.SITE</span>
         </div>
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">JPMS</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        <div class="hero-top-right">
+            <span class="section-label">Vol. 1 / 2026</span>
+        </div>
+        <div class="hero-name-block">
+            <span class="hero-name-line first">JOHN</span>
+            <span class="hero-name-line last">SALANGSANG</span>
+        </div>
+        <div class="hero-meta">
+            <p class="hero-role">/ INFORMATION TECHNOLOGY AUDITOR</p>
+            <p class="hero-scroll">↓ scroll to tune in</p>
+        </div>
+        <div class="hero-folio">p. 001</div>
+        <div class="hero-signal"></div>
+    </section>
+
+    <!-- MANIFESTO -->
+    <section id="manifesto">
+        <div style="position:absolute;top:3rem;left:clamp(2rem,6vw,8rem);">
+            <span class="section-label">/ MANIFESTO / p. 002</span>
+        </div>
+        <div class="manifesto-inner">
+            <span class="manifesto-line"><span>BUILD WITH PURPOSE.</span></span>
+            <span class="manifesto-line"><span>AUDIT WITH PRECISION.</span></span>
+            <span class="manifesto-line"><span>SECURE THE SIGNAL.</span></span>
+        </div>
+        <div class="manifesto-meta">jpms / 2026</div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+        <div style="position:absolute;top:3rem;left:clamp(2rem,6vw,8rem);">
+            <span class="section-label">/ FIELD WORK / p. 005</span>
+        </div>
+        <div style="margin-top:4rem;">
+            <h2 class="exp-heading reveal">WHERE I'VE<br><span>WORKED</span></h2>
+            <p class="exp-sub reveal">2 roles · Dec 2024 — Present</p>
+
+            <div class="exp-list">
+
+                <!-- Role 1: IT Auditor -->
+                <div class="exp-entry reveal">
+                    <div class="exp-left">
+                        <p class="exp-date-range">MAY 2025<br>— PRESENT</p>
+                        <p class="exp-location">Angeles City,<br>Pampanga</p>
+                    </div>
+                    <div class="exp-right">
+                        <p class="exp-role">IT Auditor</p>
+                        <h3 class="exp-company">PORAC<br>BANK, INC.</h3>
+                        <ul class="exp-bullets">
+                            <li>Conducted IT risk assessments on key banking systems including core banking, email
+                                servers, and communication platforms.</li>
+                            <li>Developed and maintained IT audit programs in alignment with Bangko Sentral ng Pilipinas
+                                (BSP) regulations.</li>
+                            <li>Reviewed and evaluated IT general controls (ITGCs) — access controls, data backup,
+                                change management, and logical security.</li>
+                            <li>Identified control gaps and recommended practical, risk-based solutions to strengthen IT
+                                governance and security posture.</li>
+                            <li>Participated in system audits across auditable units to evaluate overall control
+                                effectiveness.</li>
+                            <li>Prepared audit findings, working papers, and reports for internal stakeholders and
+                                regulatory compliance.</li>
+                        </ul>
+                        <div class="exp-tags">
+                            <span class="exp-tag">IT Risk Assessment</span>
+                            <span class="exp-tag">ITGCs</span>
+                            <span class="exp-tag">BSP Regulations</span>
+                            <span class="exp-tag">ITACs</span>
+                            <span class="exp-tag">Information Security</span>
+                            <span class="exp-tag">Audit Documentation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Role 2: Full Stack Dev Intern -->
+                <div class="exp-entry reveal reveal-delay-1">
+                    <div class="exp-left">
+                        <p class="exp-date-range">DEC 2024<br>— MAR 2025</p>
+                        <p class="exp-location">Clark Freeport<br>Zone, Pampanga</p>
+                    </div>
+                    <div class="exp-right">
+                        <p class="exp-role">Full Stack Developer Intern</p>
+                        <h3 class="exp-company">CLARK<br>OUTSOURCING</h3>
+                        <ul class="exp-bullets">
+                            <li>Contributed to development and maintenance of the company's HRIS web application used
+                                across the organization.</li>
+                            <li>Built dynamic and responsive UI components using Angular for the frontend layer.</li>
+                            <li>Implemented backend functionalities using Lumen Laravel to support data management and
+                                user operations.</li>
+                            <li>Managed MySQL database operations — schema design, queries, and efficient data
+                                retrieval.</li>
+                            <li>Debugged and resolved issues across both frontend and backend environments to enhance
+                                application performance.</li>
+                            <li>Tested and validated APIs using Postman, ensuring proper integration between frontend
+                                and backend services.</li>
+                        </ul>
+                        <div class="exp-tags">
+                            <span class="exp-tag">Angular</span>
+                            <span class="exp-tag">Lumen Laravel</span>
+                            <span class="exp-tag">MySQL</span>
+                            <span class="exp-tag">Postman</span>
+                            <span class="exp-tag">HRIS</span>
+                            <span class="exp-tag">REST APIs</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
-    </nav>
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/jpms-profile-pic.png" alt="John Patrick Salangsang">
+    </section>
+
+    <!-- DUALITY -->
+    <section id="duality">
+        <div style="position:absolute;top:3rem;left:clamp(2rem,5vw,6rem);">
+            <span class="section-label">/ WHO AM I / p. 003</span>
+        </div>
+        <div style="width:100%">
+            <div class="duality-inner">
+                <div class="duality-col">
+                    <p class="duality-col-label">THE CODE</p>
+                    <h2 class="duality-heading reveal">WHAT<br>I BUILD</h2>
+                    <div>
+                        <div class="duality-item reveal reveal-delay-1">
+                            <span class="duality-item-key">LANGS</span>
+                            <span class="duality-item-val">Python · TypeScript · Dart · PHP · Java · SQL</span>
+                        </div>
+                        <div class="duality-item reveal reveal-delay-2">
+                            <span class="duality-item-key">FRONT</span>
+                            <span class="duality-item-val">Angular · Flutter · HTML · CSS · JavaScript</span>
+                        </div>
+                        <div class="duality-item reveal reveal-delay-3">
+                            <span class="duality-item-key">BACK</span>
+                            <span class="duality-item-val">Node.js · Flask · Lumen Laravel</span>
+                        </div>
+                        <div class="duality-item reveal reveal-delay-4">
+                            <span class="duality-item-key">DATA</span>
+                            <span class="duality-item-val">MySQL · MongoDB</span>
+                        </div>
+                        <div class="duality-item reveal reveal-delay-5">
+                            <span class="duality-item-key">AI / ML</span>
+                            <span class="duality-item-val">TFLite · CNN · OpenRouter API · Machine Learning</span>
+                        </div>
+                        <div class="duality-item reveal">
+                            <span class="duality-item-key">CLOUD</span>
+                            <span class="duality-item-val">AWS · Git</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="duality-divider"></div>
+                <div class="duality-col">
+                    <p class="duality-col-label">THE AUDIT</p>
+                    <h2 class="duality-heading reveal">WHAT<br>I SECURE</h2>
+                    <div>
+                        <div class="duality-item reveal reveal-delay-1">
+                            <span class="duality-item-key">DOMAIN</span>
+                            <span class="duality-item-val">IT Risk · Assurance · ITGCs · ITAC</span>
+                        </div>
+                        <div class="duality-item reveal reveal-delay-2">
+                            <span class="duality-item-key">CERTS</span>
+                            <span class="duality-item-val">CompTIA Security+ Path · ISACA CISA Path</span>
+                        </div>
+                        <div class="duality-item reveal reveal-delay-3">
+                            <span class="duality-item-key">REGS</span>
+                            <span class="duality-item-val">BSP Regulations · Banking Compliance · ISO 27001</span>
+                        </div>
+                        <div class="duality-item reveal reveal-delay-4">
+                            <span class="duality-item-key">TOOLS</span>
+                            <span class="duality-item-val">Audit Programs · Working Papers · Reports</span>
+                        </div>
+                        <div class="duality-item reveal reveal-delay-5">
+                            <span class="duality-item-key">CITY</span>
+                            <span class="duality-item-val">Pampanga, PH → Everywhere</span>
+                        </div>
+                        <div class="duality-item reveal">
+                            <span class="duality-item-key">NOW</span>
+                            <span class="duality-item-val">Building in public. Securing at work.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WORK -->
+    <section id="work">
+        <div class="work-header">
+            <div>
+                <span class="section-label">/ PROJECTS / p. 004</span>
+                <h2 class="work-title reveal" style="margin-top:1rem;">SELECTED<br><span>WORK</span></h2>
+            </div>
+            <div style="text-align:right">
+                <p
+                    style="font-family:var(--mono);font-size:0.6rem;color:var(--cream);opacity:0.25;letter-spacing:0.1em;">
+                    4 PROJECTS · 2024—2025</p>
+            </div>
         </div>
 
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">JP Salangsang</h1>
-            <p class="section__text__p2">Computer Science Major</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/salangsangjpmoreno-resume.pdf')">My Resume</button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Me</button>
-            </div>
-            <div id="socials-container">
-                <i class="icon fa-brands fa-linkedin fa-2x" alt="My LinkedIn" onclick="location.href='https://www.linkedin.com/in/john-patrick-salangsang'"></i>
-                <i class="icon fa-brands fa-square-github fa-2x" alt="My GitHub" onclick="location.href='https://github.com/SalangsangJohnPatrick'"></i>
-            </div>
-        </div>
-    </section>
-    <section id="about">
-        <p class="section__text__p1">Get to Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img src="./assets/about-pic.JPG" alt="Profile Picture" class="about-pic">
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <i class="about-icon fa-solid fa-award fa-lg"></i>
-                        <h3>Achievement</h3>
-                        <p>Academic Honor Student <br>Cummulative GPA: 1.21</p>
+        <div class="work-grid">
+            <!-- Card 1 -->
+            <div class="work-card reveal" style="--card-accent:rgba(255,45,0,0.05);--card-color:var(--red);">
+                <div>
+                    <div class="work-card-top">
+                        <span class="work-card-number">01 / 04</span>
+                        <span class="work-card-year">2025</span>
                     </div>
-                    <div class="details-container">
-                        <i class="about-icon fa-solid fa-graduation-cap fa-lg"></i>
-                        <h3>Education</h3>
-                        <p>Bachelor of Science in <br>Computer Science</p>
-                    </div>
-                    <div class="details-container">
-                        <i class="about-icon fa-solid fa-briefcase fa-lg"></i>
-                        <h3>Internship</h3>
-                        <p>Full Stack Developer<br>Clark Outsourcing</p>
+                    <p class="work-card-cat">AI · Audit Automation</p>
+                    <h3 class="work-card-title">AI AUDIT<br>ENGINE</h3>
+                </div>
+                <div>
+                    <p class="work-card-desc">LLM-powered risk assessment engine using OpenRouter API. Evaluates audit
+                        scopes across impact/likelihood matrices with structured JSON validation and automated
+                        HIGH/MEDIUM/LOW prioritization. Converts findings into executive-ready narratives.</p>
+                    <div class="work-card-stack">
+                        <span class="work-card-tag">Python</span>
+                        <span class="work-card-tag">Google Colab</span>
+                        <span class="work-card-tag">OpenRouter API</span>
+                        <span class="work-card-tag">LLM</span>
+                        <span class="work-card-tag">JSON</span>
                     </div>
                 </div>
-                <div class="text-container">
-                    <p>
-                        I am a Computer Science major with a strong passion for software development. 
-                        I have developed a diverse technical skill set, allowing me to work on a range of projects, 
-                        including backend systems, web applications, and mobile app development. As I transition 
-                        into the professional world, I am eager to apply my knowledge, continue learning, and 
-                        contribute to impactful, innovative projects.
-                    </p>
-                </div>
             </div>
-        </div>
-        <i class="icon arrow fa-regular fa-circle-down fa-2x" onclick="location.href='./#skills'"></i>
-    </section>
-    <section id="skills">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Tech Skills</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Frontend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <i class="icon fa-brands fa-html5 fa-2x"></i>
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <i class="icon fa-brands fa-square-js fa-2x"></i>
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Fundamentals</p>
-                            </div>
-                        </article>
-                        <article>
-                            <i class="icon fa-brands fa-css3-alt fa-2x"></i>
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <i class="icon fa-brands fa-flutter fa-2x"></i>
-                            <div>
-                                <h3>Flutter</h3>
-                                <p>Fundamentals</p>
-                            </div>
-                        </article>
-                        <article>
-                            <i class="icon fa-brands fa-angular fa-2x"></i>
-                            <div>
-                                <h3>Angular</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <i class="icon fa-brands fa-bootstrap fa-2x"></i>
-                            <div>
-                                <h3>Bootstrap</h3>
-                                <p>Fundamentals</p>
-                            </div>
-                        </article>
+
+            <!-- Card 2 -->
+            <div class="work-card reveal reveal-delay-1"
+                style="--card-accent:rgba(0,180,255,0.04);--card-color:#00b4d8;">
+                <div>
+                    <div class="work-card-top">
+                        <span class="work-card-number">02 / 04</span>
+                        <span class="work-card-year">2025</span>
+                    </div>
+                    <p class="work-card-cat" style="color:#00b4d8;">Mobile · Machine Learning</p>
+                    <h3 class="work-card-title">KAUTH</h3>
+                </div>
+                <div>
+                    <p class="work-card-desc">Counterfeit detection app for Philippine peso banknotes. Built with
+                        Flutter using Xception CNN architecture deployed via TFLite for accurate, on-device banknote
+                        classification. Real-time camera analysis.</p>
+                    <div class="work-card-stack">
+                        <span class="work-card-tag">Flutter</span>
+                        <span class="work-card-tag">Dart</span>
+                        <span class="work-card-tag">TFLite</span>
+                        <span class="work-card-tag">CNN</span>
+                        <span class="work-card-tag">Xception</span>
                     </div>
                 </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Backend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <i class="icon fa-brands fa-git fa-2x"></i>
-                            <div>
-                                <h3>Git</h3>
-                                <p>Fundamentals</p>
-                            </div>
-                        </article>
-                        <article>
-                            <i class="icon fa-solid fa-database fa-2x"></i>
-                            <div>
-                                <h3>MySQL</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <i class="icon fa-brands fa-python fa-2x"></i>
-                            <div>
-                                <h3>Python</h3>
-                                <p>Fundamentals</p>
-                            </div>
-                        </article>
-                        <article>
-                            <i class="icon fa-solid fa-server fa-2x"></i>
-                            <div>
-                                <h3>Postman</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <i class="icon fa-brands fa-php fa-2x"></i>
-                            <div>
-                                <h3>Lumen</h3>
-                                <p>Fundamentals</p>
-                            </div>
-                        </article>
-                        <article>
-                            <i class="icon fa-brands fa-java fa-2x"></i>
-                            <div>
-                                <h3>Java</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="work-card reveal reveal-delay-2"
+                style="--card-accent:rgba(100,200,100,0.04);--card-color:#7ed957;">
+                <div>
+                    <div class="work-card-top">
+                        <span class="work-card-number">03 / 04</span>
+                        <span class="work-card-year">2024</span>
+                    </div>
+                    <p class="work-card-cat" style="color:#7ed957;">Web · Education</p>
+                    <h3 class="work-card-title">SKIMATA</h3>
+                </div>
+                <div>
+                    <p class="work-card-desc">Interactive web application that visualizes CPU and memory management
+                        algorithms. Implements Non-Preemptive Priority CPU Scheduling. Built for students who need to
+                        actually see OS concepts, not just read about them.</p>
+                    <div class="work-card-stack">
+                        <span class="work-card-tag">JavaScript</span>
+                        <span class="work-card-tag">HTML</span>
+                        <span class="work-card-tag">CSS</span>
+                        <span class="work-card-tag">OS Algorithms</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="work-card reveal reveal-delay-3"
+                style="--card-accent:rgba(255,180,0,0.04);--card-color:#ffb700;">
+                <div>
+                    <div class="work-card-top">
+                        <span class="work-card-number">04 / 04</span>
+                        <span class="work-card-year">2024</span>
+                    </div>
+                    <p class="work-card-cat" style="color:#ffb700;">Web · Data Science</p>
+                    <h3 class="work-card-title">SYSTEM<br>ANALYSER</h3>
+                </div>
+                <div>
+                    <p class="work-card-desc">Predicts estimated relative performance of computer hardware using
+                        Multiple Linear Regression. Flask backend with Python data analysis and a clean frontend for
+                        non-technical users to get insights into hardware decisions.</p>
+                    <div class="work-card-stack">
+                        <span class="work-card-tag">Python</span>
+                        <span class="work-card-tag">Flask</span>
+                        <span class="work-card-tag">ML Regression</span>
+                        <span class="work-card-tag">HTML/CSS</span>
+                        <span class="work-card-tag">JavaScript</span>
                     </div>
                 </div>
             </div>
         </div>
-        <i class="icon arrow fa-regular fa-circle-down fa-2x" onclick="location.href='./#projects'"></i>
     </section>
-    <section id="projects">
-        <p class="section__text__p1">Browse My Top</p>
-        <h1 class="title">University Projects</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-1.png" alt="Project 1" class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">KAuth</h2>
-                    <p class="project-description">
-                        A Final Year thesis project, which is a counterfeit detection application for Philippine peso 
-                        banknotes, leveraging image processing and convolutional neural networks. Implementing a 
-                        convolutional neural network architecture particularly Xception CNN to classify genuine or 
-                        counterfeit one-thousand peso (eNGC) banknote images.
-                    </p>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com/SalangsangJohnPatrick/KAuth-CounterfeitDetectionApplication'">See Repository</button>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certs">
+        <div style="position:absolute;top:3rem;left:clamp(2rem,6vw,8rem);">
+            <span class="section-label">/ CREDENTIALS / p. 006</span>
+        </div>
+        <div style="margin-top:4rem;">
+            <h2 class="certs-heading reveal">CERTIFIED<br><span>& VERIFIED</span></h2>
+            <p class="certs-sub reveal">10 certifications · 2021 — 2025</p>
+            <div class="certs-list">
+                <div class="cert-row reveal">
+                    <span class="cert-name">Information Systems Auditing, Controls and Assurance</span>
+                    <span class="cert-issuer">HKUST</span>
+                    <span class="cert-year">2025</span>
+                </div>
+                <div class="cert-row reveal reveal-delay-1">
+                    <span class="cert-name">CompTIA Security+ 701</span>
+                    <span class="cert-issuer">Infosec</span>
+                    <span class="cert-year">2025</span>
+                </div>
+                <div class="cert-row reveal reveal-delay-2">
+                    <span class="cert-name">Developing AI Applications with Python and Flask</span>
+                    <span class="cert-issuer">Microsoft</span>
+                    <span class="cert-year">2025</span>
+                </div>
+                <div class="cert-row reveal reveal-delay-3">
+                    <span class="cert-name">Microsoft Azure Machine Learning</span>
+                    <span class="cert-issuer">IBM</span>
+                    <span class="cert-year">2025</span>
+                </div>
+                <div class="cert-row reveal reveal-delay-4">
+                    <span class="cert-name">AWS Academy Cloud Foundations</span>
+                    <span class="cert-issuer">Amazon Web Services</span>
+                    <span class="cert-year">2024</span>
+                </div>
+                <div class="cert-row reveal reveal-delay-5">
+                    <span class="cert-name">CyberOps Associate</span>
+                    <span class="cert-issuer">Cisco</span>
+                    <span class="cert-year">2024</span>
+                </div>
+                <div class="cert-row reveal">
+                    <span class="cert-name">CCNAv7: Introduction to Networks</span>
+                    <span class="cert-issuer">Cisco</span>
+                    <span class="cert-year">2024</span>
+                </div>
+                <div class="cert-row reveal reveal-delay-1">
+                    <span class="cert-name">Introduction to IoT</span>
+                    <span class="cert-issuer">Cisco</span>
+                    <span class="cert-year">2021</span>
+                </div>
+                <div class="cert-row reveal reveal-delay-2">
+                    <span class="cert-name">Introduction to Cybersecurity</span>
+                    <span class="cert-issuer">Cisco</span>
+                    <span class="cert-year">2021</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RIGHT NOW -->
+    <section id="rightnow">
+        <div style="position:absolute;top:3rem;left:clamp(2rem,6vw,8rem);">
+            <span class="section-label">/ RIGHT NOW / p. 007</span>
+        </div>
+        <div style="margin-top:4rem;">
+            <h2 class="rightnow-heading reveal">RIGHT<br><span>NOW</span></h2>
+            <div class="rightnow-grid">
+                <div class="rightnow-item reveal">
+                    <div class="rightnow-dot"></div>
+                    <div>
+                        <p class="rightnow-item-label">Auditing</p>
+                        <p class="rightnow-item-value">Infrastructure, Systems, Processes</p>
+                        <p class="rightnow-item-sub">Porac Bank, IT Audit</p>
                     </div>
                 </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-2.png" alt="Project 2" class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">SKIMATA</h2>
-                    <p class="project-description">
-                        This is an interactive web application designed to provide an intuitive and visual understanding 
-                        of CPU scheduling and memory management algorithms. The platform allows users to simulate various 
-                        algorithms, including Fixed Partitions, First In First Out, Non-Preemptive Priority Scheduling, 
-                        Shortest Remaining Task First.
-                    </p>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com/SalangsangJohnPatrick/JavaScript-Skimata'">See Repository</button>
+                <div class="rightnow-item reveal reveal-delay-1">
+                    <div class="rightnow-dot"></div>
+                    <div>
+                        <p class="rightnow-item-label">Studying</p>
+                        <p class="rightnow-item-value">CISA Exam Prep</p>
+                        <p class="rightnow-item-sub">next milestone</p>
                     </div>
                 </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-3.png" alt="Project 3" class="project-img">
+                <div class="rightnow-item reveal reveal-delay-2">
+                    <div class="rightnow-dot"></div>
+                    <div>
+                        <p class="rightnow-item-label">Building</p>
+                        <p class="rightnow-item-value">AI-powered audit tools</p>
+                        <p class="rightnow-item-sub">automating the boring parts</p>
                     </div>
-                    <h2 class="experience-sub-title project-title">SystemAnalyser</h2>
-                    <p class="project-description">
-                        A web-based application built with Flask that performs statistical 
-                        analysis and visualization of CSV data using linear regression. 
-                        The app allows users to upload CSV files, select dependent and 
-                        independent variables, and generates statistical insights along with 
-                        visualization plots.
-                    </p>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com/SalangsangJohnPatrick/Flask-SystemAnalyser'">See Repository</button>
+                </div>
+                <div class="rightnow-item reveal reveal-delay-3">
+                    <div class="rightnow-dot"></div>
+                    <div>
+                        <p class="rightnow-item-label">Attended</p>
+                        <p class="rightnow-item-value">COIA 4th National Convention</p>
+                        <p class="rightnow-item-sub">Rural Bankers Assoc. 2026</p>
+                    </div>
+                </div>
+                <div class="rightnow-item reveal reveal-delay-4">
+                    <div class="rightnow-dot"></div>
+                    <div>
+                        <p class="rightnow-item-label">Education</p>
+                        <p class="rightnow-item-value">HAU — Summa Cum Laude</p>
+                        <p class="rightnow-item-sub">GWA 1.21 · BS Computer Science</p>
+                    </div>
+                </div>
+                <div class="rightnow-item reveal reveal-delay-5">
+                    <div class="rightnow-dot"></div>
+                    <div>
+                        <p class="rightnow-item-label">City</p>
+                        <p class="rightnow-item-value">Pampanga, PH</p>
+                        <p class="rightnow-item-sub">Central Luzon → beyond</p>
                     </div>
                 </div>
             </div>
         </div>
-        <i class="icon arrow fa-regular fa-circle-down fa-2x" onclick="location.href='./#contact'"></i>
     </section>
+
+    <!-- CONTACT -->
     <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <i class="contact-icon fa-solid fa-envelope fa-lg"></i>
-                <p><a href="mailto:salangsangjpmoreno@gmail.com">salangsangjpmoreno@gmail.com</a></p>
+        <div style="position:absolute;top:3rem;left:clamp(2rem,6vw,8rem);">
+            <span class="section-label">/ OPEN CHANNEL / p. 008</span>
+        </div>
+        <div>
+            <p class="contact-cta reveal">LET'S BUILD SOMETHING SECURE. SOMETHING THAT MATTERS.</p>
+            <a href="mailto:salangsangjpmoreno@gmail.com" class="contact-email reveal">
+                salangsangjpmoreno<br>@gmail.com
+            </a>
+            <div class="contact-divider reveal"></div>
+            <div class="contact-links reveal">
+                <a href="https://linkedin.com/in/john-patrick-salangsang" target="_blank" rel="noopener noreferrer"
+                    class="contact-link">LinkedIn ↗</a>
+                <a href="mailto:salangsangjpmoreno@gmail.com" class="contact-link">Email ↗</a>
+                <a href="assets/Salangsang_JohnPatrick_Resume_2026.pdf" class="contact-link">My Resume ↗</a>
             </div>
-            <div class="contact-info-container">
-                <i class="contact-icon fa-brands fa-linkedin fa-lg"></i>
-                <p><a href="https://www.linkedin.com/in/john-patrick-salangsang">LinkedIn</a></p>
+            <div class="contact-footer reveal">
+                <p>© 2026 JOHN PATRICK SALANGSANG</p>
+                <p>BUILT RAW · SHIPPED WITH INTENT</p>
             </div>
         </div>
     </section>
-    <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <p>Copyright &#169; 2024 JP Salangsang. All Rights Reserved.</p>
-    </footer>
+
     <script src="script.js"></script>
+
 </body>
 
 </html>
