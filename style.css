@@ -53,6 +53,21 @@ body {
     transition: background 0.5s ease, color 0.5s ease;
 }
 
+@media (hover: none) and (pointer: coarse) {
+    body {
+        cursor: auto;
+    }
+
+    .cursor-dot,
+    .cursor-ring {
+        display: none;
+    }
+
+    #theme-toggle {
+        cursor: auto;
+    }
+}
+
 /* GRAIN */
 body::before {
     content: '';
@@ -1033,6 +1048,14 @@ html[data-theme="light"] #theme-toggle {
 @media (max-width: 768px) {
     .duality-inner {
         grid-template-columns: 1fr;
+    }
+
+    .duality-col,
+    .duality-col:first-child,
+    .duality-col:last-child {
+        padding-left: clamp(1rem, 4vw, 4rem);
+        padding-right: clamp(1rem, 4vw, 4rem);
+        margin-bottom: 2rem;
     }
 
     .duality-divider {
